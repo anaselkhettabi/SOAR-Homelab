@@ -1,3 +1,10 @@
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/fc2e7ff3-25ab-4574-94b5-a5bb0ffd994e" width="240"/>
+  <img src="https://github.com/user-attachments/assets/80479fda-fe42-438d-bec4-6e064e21cb65" width="240"/>
+  <img src="https://github.com/user-attachments/assets/be0dbf87-7f35-48dd-9f1b-5656a1cc2610" width="240"/>
+  <img src="https://github.com/user-attachments/assets/866f85d6-cd30-4283-9f58-f34aee315ede" width="240"/>
+</p>
+
 # SOAR Home Lab (Wazuh + Shuffle + TheHive + Cortex)
 
 This project showcases a basic Security Orchestration, Automation, and Response (SOAR) setup using open-source tools: Wazuh (SIEM), Shuffle (Automation), TheHive (Ticketing), and Cortex (Enrichment). The lab simulates real-world alerting, ticket creation, and automated enrichment workflows.
