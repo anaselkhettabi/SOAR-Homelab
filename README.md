@@ -7,7 +7,7 @@
 
 # SOAR Home Lab (Wazuh + Shuffle + TheHive + Cortex)
 
-This project showcases a basic Security Orchestration, Automation, and Response (SOAR) setup using open-source tools: Wazuh (SIEM), Shuffle (Automation), TheHive (Ticketing), and Cortex (Enrichment). The lab simulates real-world alerting, ticket creation, and automated enrichment workflows.
+This project showcases a basic Security Orchestration, Automation, and Response (SOAR) setup using open-source tools: Wazuh (SIEM), Shuffle (Automation), TheHive (Ticketing), and Cortex (Threat Intel Enrichment). The lab simulates real-world alerting, ticket creation, and automated enrichment workflows.
 
 ## 🧰 Stack
 
@@ -18,7 +18,8 @@ This project showcases a basic Security Orchestration, Automation, and Response 
 
 ## 🔧 Prerequisites
 
-- Ubuntu/Debian-based VMs or Docker containers
+- Ubuntu/Debian-based VMs
+- Docker Engine installed on your WSL or Linux host
 - Basic networking setup (e.g., `/etc/hosts` configuration)
 - Admin access to modify service files (Wazuh `ossec.conf`)
 - Internet access for enrichment API lookups
