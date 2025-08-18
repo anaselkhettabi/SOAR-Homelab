@@ -7,65 +7,43 @@
 
 # 🛡️ SOAR Home Lab
 
-A home lab integrating Wazuh, Shuffle, TheHive, and Cortex to demonstrate Security Orchestration, Automation, and Response (SOAR) workflows.
+A simple home lab for learning Security Orchestration, Automation, and Response (SOAR) using open-source tools.
 
-## 📌 Overview
+## What is This Lab?
 
-This project showcases a hands-on SOAR implementation designed for incident response and security automation. The lab integrates multiple open-source security tools to simulate real-world detection, triage, and response processes.
+This project helps you explore how security teams detect, investigate, and respond to threats using:
 
-By building and documenting this lab, I aim to demonstrate skills in:
+- **Wazuh** for threat detection (SIEM)
+- **Shuffle** for automating security workflows (SOAR)
+- **TheHive** for case management
+- **Cortex** for threat intelligence enrichment
 
-- Threat detection with Wazuh (SIEM).
-- Case management & investigations with TheHive.
-- Automated playbooks with Shuffle (SOAR).
-- Threat intelligence enrichment with Cortex analyzers.
-- Containerized deployment using Docker.
+All components run in Docker containers for easy setup.
 
-## ⚙️ Tools & Components
+## How Does It Work?
 
-- Wazuh (SIEM + Agents)
-- Shuffle (Security Automation)
-- TheHive (Incident Response Platform)
-- Cortex (Threat Intelligence Enrichment)
-- Docker (Containerized Environments)
+1. **Wazuh** detects suspicious activity on endpoints.
+2. **Shuffle** receives alerts and automates responses:
+    - Creates cases in **TheHive**
+    - Enriches data with **Cortex** (optional)
+3. You can follow the flow from detection to investigation and response.
 
-## 🏗️ Architecture
+## Quick Start
 
-flowchart LR
-  A[Endpoints / Agents] --> B[Wazuh Manager]
-  B --> C[Wazuh Indexer]
-  B --> D[Wazuh Dashboard]
-  B --> E[Shuffle SOAR]
-  E --> F[TheHive Case Management]
-  F --> G[Cortex Threat Intel]
+- **Requirements:** Docker, Linux, admin access, internet connection.
+- **Setup:** See [`setup/`](setup/) for installation and connection steps.
 
-## 🔧 Prerequisites
+## Project Structure
 
-- Ubuntu/Debian-based VMs
-- Docker Engine installed on your WSL or Linux host
-- Basic networking setup (e.g., `/etc/hosts` configuration)
-- Admin access to modify service files (Wazuh `ossec.conf`)
-- Internet access for enrichment API lookups
+- `docs/` — Architecture and screenshots
+- `configs/` — Example config files
+- `scripts/` — Helper and validation scripts
+- `setup/` — Step-by-step setup instructions
 
-## 🚀 What This Lab Does
+## Learn More
 
-- Wazuh detects suspicious activity (scheduled task creation)
-- Alert sent to Shuffle via webhook
-- Shuffle automates:
-  - Alert creation in TheHive
-  - Enriches with observables (e.g., IP, file hashes via Wazuh logs)
-- Cortex enriches observables (future step or optional)
+For detailed guides and walkthroughs, check the files in the `setup/` and `docs/` folders.
 
-## 📁 Folder Overview
+---
 
-- `docs/`: Architecture summary and screenshots
-- `configs/`: Sample config files for Wazuh, Shuffle, and TheHive
-- `scripts/`: Windows and validation scripts used in the lab
-- `setup/`: Setup instructions and connection steps
-
-## 🏁 Flag Script
-
-To verify completion:
-```bash
-cd ~/Desktop
-./flag1.sh
+*This README gives a high-level overview. For step-by-step instructions, see the other markdown files in this repo.*
