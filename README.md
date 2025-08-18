@@ -5,11 +5,11 @@
   <img src="https://github.com/user-attachments/assets/866f85d6-cd30-4283-9f58-f34aee315ede" width="210"/>
 </p>
 
-# 🛡️ SOAR Home Lab
+# SOAR Home Lab
 
 A simple home lab for learning Security Orchestration, Automation, and Response (SOAR) using open-source tools.
 
-## What is This Lab?
+## What is This Lab? 🛡️
 
 This project helps you explore how security teams detect, investigate, and respond to threats using:
 
@@ -20,7 +20,7 @@ This project helps you explore how security teams detect, investigate, and respo
 
 All components run in Docker containers for easy setup.
 
-## How Does It Work?
+## How Does It Work? 🔗
 
 1. **Wazuh** detects suspicious activity on endpoints.
 2. **Shuffle** receives alerts and automates responses:
@@ -28,19 +28,19 @@ All components run in Docker containers for easy setup.
     - Enriches data with **Cortex** (optional)
 3. You can follow the flow from detection to investigation and response.
 
-## Quick Start
+## Quick Start 🚀
 
 - **Requirements:** Docker, Linux, admin access, internet connection.
 - **Setup:** See [`setup/`](setup/) for installation and connection steps.
 
-## Project Structure
+## Project Structure 📁
 
 - `docs/` — Architecture and screenshots
 - `configs/` — Example config files
 - `scripts/` — Helper and validation scripts
 - `setup/` — Step-by-step setup instructions
 
-## Learn More
+## Learn More 📚
 
 For detailed guides and walkthroughs, check the files in the `setup/` and `docs/` folders.
 

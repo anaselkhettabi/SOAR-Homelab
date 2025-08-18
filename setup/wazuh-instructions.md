@@ -34,7 +34,7 @@ sysctl vm.max_map_count
 
 ## 2. Clone the Wazuh Docker Repository
 
-- Wazuh provides two Docker deployment options:
+Wazuh provides two Docker deployment options:
 - **Single-node:** Simple setup, suitable for labs and small environments.
 - **Multi-node:** Scalable, for production or large environments.
 
