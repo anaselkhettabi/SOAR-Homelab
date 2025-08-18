@@ -27,4 +27,4 @@ docker-compose up -d
 
 ---
 
-For more details, see the
+For more details, see the [Cortex documentation](https://docs.thehive-project.org/cortex/installation/docker/).
