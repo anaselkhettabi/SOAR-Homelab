@@ -1,20 +1,43 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/fc2e7ff3-25ab-4574-94b5-a5bb0ffd994e" width="230"/>
-  <img src="https://github.com/user-attachments/assets/80479fda-fe42-438d-bec4-6e064e21cb65" width="230"/>
-  <img src="https://github.com/user-attachments/assets/be0dbf87-7f35-48dd-9f1b-5656a1cc2610" width="230"/>
-  <img src="https://github.com/user-attachments/assets/866f85d6-cd30-4283-9f58-f34aee315ede" width="230"/>
+  <img src="https://github.com/user-attachments/assets/fc2e7ff3-25ab-4574-94b5-a5bb0ffd994e" width="210"/>
+  <img src="https://github.com/user-attachments/assets/80479fda-fe42-438d-bec4-6e064e21cb65" width="210"/>
+  <img src="https://github.com/user-attachments/assets/be0dbf87-7f35-48dd-9f1b-5656a1cc2610" width="210"/>
+  <img src="https://github.com/user-attachments/assets/866f85d6-cd30-4283-9f58-f34aee315ede" width="210"/>
 </p>
 
-# SOAR Home Lab (Wazuh + Shuffle + TheHive + Cortex)
+# 🛡️ SOAR Home Lab
 
-This project showcases a basic Security Orchestration, Automation, and Response (SOAR) setup using open-source tools: Wazuh (SIEM), Shuffle (Automation), TheHive (Ticketing), and Cortex (Threat Intel Enrichment). The lab simulates real-world alerting, ticket creation, and automated enrichment workflows.
+A home lab integrating Wazuh, Shuffle, TheHive, and Cortex to demonstrate Security Orchestration, Automation, and Response (SOAR) workflows.
 
-## 🧰 Stack
+## 📌 Overview
 
-- Wazuh (SIEM + Agent)
-- Shuffle (SOAR)
-- TheHive (Alert Management)
+This project showcases a hands-on SOAR implementation designed for incident response and security automation. The lab integrates multiple open-source security tools to simulate real-world detection, triage, and response processes.
+
+By building and documenting this lab, I aim to demonstrate skills in:
+
+- Threat detection with Wazuh (SIEM).
+- Case management & investigations with TheHive.
+- Automated playbooks with Shuffle (SOAR).
+- Threat intelligence enrichment with Cortex analyzers.
+- Containerized deployment using Docker.
+
+## ⚙️ Tools & Components
+
+- Wazuh (SIEM + Agents)
+- Shuffle (Security Automation)
+- TheHive (Incident Response Platform)
 - Cortex (Threat Intelligence Enrichment)
+- Docker (Containerized Environments)
+
+## 🏗️ Architecture
+
+flowchart LR
+  A[Endpoints / Agents] --> B[Wazuh Manager]
+  B --> C[Wazuh Indexer]
+  B --> D[Wazuh Dashboard]
+  B --> E[Shuffle SOAR]
+  E --> F[TheHive Case Management]
+  F --> G[Cortex Threat Intel]
 
 ## 🔧 Prerequisites
 
