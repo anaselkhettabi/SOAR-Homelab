@@ -1,11 +1,3 @@
-# ![Shuffle Architecture](https://raw.githubusercontent.com/Shuffle/Shuffle/main/frontend/src/assets/img/shuffle_architecture.png)
-
-The Shuffle architecture includes several main components:
-- **Frontend:** Web interface for users to create, manage, and monitor workflows.
-- **Backend:** Handles API requests, workflow execution, and system logic.
-- **Orborus:** Manages workflow scheduling and execution across distributed environments.
-- **Opensearch:** Database for storing workflow data, logs, and search operations.
-- **Workers:** Execute workflows and tasks, allowing Shuffle to scale and distribute processing.
 # Shuffle Setup (SOAR)
 
 ## Prerequisites
@@ -58,6 +50,17 @@ Sign in with the same credentials you just created.
 Go to `/apps` in the Shuffle UI to check for available apps. If none appear, you may need to configure proxies.
 
 For more configuration tips and troubleshooting, see the [Shuffle configuration docs](https://shuffler.io/docs/configuration).
+
+## Shuffle Architecture
+
+![Shuffle Architecture](docs/images/shuffle_arch.png)
+
+The Shuffle architecture includes several main components:
+- **Frontend:** Web interface for users to create, manage, and monitor workflows.
+- **Backend:** Handles API requests, workflow execution, and system logic.
+- **Orborus:** Manages workflow scheduling and execution across distributed environments.
+- **Opensearch:** Database for storing workflow data, logs, and search operations.
+- **Workers:** Execute workflows and tasks, allowing Shuffle to scale and distribute processing.
 
 ---
 

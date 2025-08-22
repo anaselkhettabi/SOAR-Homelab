@@ -1,8 +1,5 @@
-# ![Wazuh Architecture](https://documentation.wazuh.com/current/_images/deployment-architecture1.png)
-
-**Note:** In this lab, we use the single-node Docker deployment, so you'll have only one Wazuh manager node (not a cluster as shown in the architecture diagram).
-
 # Wazuh Setup (SIEM)
+
 **Note:** These instructions are based on Wazuh version 4.12.
 
 ## Prerequisites
@@ -93,6 +90,12 @@ To stop the containers:
 ```bash
 docker-compose down
 ```
+
+## Wazuh Architecture
+
+![Wazuh Architecture](docs/images/wazuh_arch.png)
+
+**Note:** In this lab, we use the single-node Docker deployment, so you'll have only one Wazuh manager node (not a cluster as shown in the architecture diagram).
 
 ---
 

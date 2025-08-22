@@ -46,7 +46,7 @@ Main SOC server: Old laptop
 - CPU: 12 x Intel Core i7-8750H @ 2.20GHz
 - RAM: 12GB DDR4
 - Storage: 1TB HDD
-- Hypervisor: Proxmox
+- Hypervisor: Proxmox 9.0.3
 - VM: Ubuntu 22.04.5 (runs Wazuh and Shuffle containers)
 
 Windows desktop:
