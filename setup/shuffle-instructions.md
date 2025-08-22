@@ -53,7 +53,7 @@ For more configuration tips and troubleshooting, see the [Shuffle configuration 
 
 ## Shuffle Architecture
 
-![Shuffle Architecture](docs/images/shuffle_arch.png)
+![Shuffle Architecture](../docs/images/shuffle_arch.png)
 
 The Shuffle architecture includes several main components:
 - **Frontend:** Web interface for users to create, manage, and monitor workflows.

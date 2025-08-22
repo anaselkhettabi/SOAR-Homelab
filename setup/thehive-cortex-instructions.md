@@ -47,7 +47,7 @@ Default login credentials:
 
 ## TheHive & Cortex Architecture
 
-![TheHive & Cortex Architecture](docs/images/hive_cortex_arch.png)
+![TheHive & Cortex Architecture](../docs/images/hive_cortex_arch.png)
 
 **Note:** This diagram shows the general integration between TheHive and Cortex. The actual deployment may differ in newer versions; refer to official documentation for up-to-date architecture.
 

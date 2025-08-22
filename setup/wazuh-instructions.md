@@ -93,7 +93,7 @@ docker-compose down
 
 ## Wazuh Architecture
 
-![Wazuh Architecture](docs/images/wazuh_arch.png)
+![Wazuh Architecture](../docs/images/wazuh_arch.png)
 
 **Note:** In this lab, we use the single-node Docker deployment, so you'll have only one Wazuh manager node (not a cluster as shown in the architecture diagram).
 
