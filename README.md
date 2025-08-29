@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/fc2e7ff3-25ab-4574-94b5-a5bb0ffd994e" width="210"/>
-  <img src="https://github.com/user-attachments/assets/80479fda-fe42-438d-bec4-6e064e21cb65" width="210"/>
-  <img src="https://github.com/user-attachments/assets/be0dbf87-7f35-48dd-9f1b-5656a1cc2610" width="210"/>
-  <img src="https://github.com/user-attachments/assets/866f85d6-cd30-4283-9f58-f34aee315ede" width="210"/>
+  <img src="docs/images/wazuh_logo.png" width="210"/>
+  <img src="docs/images/shuffle_logo.png" width="210"/>
+  <img src="docs/images/thehive_logo.png" width="210"/>
+  <img src="docs/images/cortex_logo.png" width="210"/>
 </p>
 
 # SOAR Homelab
