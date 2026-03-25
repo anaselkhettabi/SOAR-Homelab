@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/images/wazuh_logo.png" width="210"/>
+  <img src="docs/images/wazuh_logo.png" width="185"/>
   <img src="docs/images/shuffle_logo.png" width="210"/>
   <img src="docs/images/thehive_logo.png" width="210"/>
   <img src="docs/images/cortex_logo.png" width="210"/>
@@ -7,56 +7,49 @@
 
 # SOAR Homelab
 
-A simple homelab for learning Security Orchestration, Automation, and Response (SOAR) using open-source tools.
+## Overview
+This project demonstrates a **Security Orchestration, Automation, and Response (SOAR)** pipeline using open-source tools. It simulates how security teams **detect, investigate, and respond to threats** in a real-world environment.
 
-## What is This Lab?
+## Technologies
 
-This project helps you explore how security teams detect, investigate, and respond to threats using:
+- **Wazuh** — SIEM and threat detection  
+- **Shuffle** — Security automation (SOAR)  
+- **TheHive** — Case management  
+- **Cortex** — Threat intelligence enrichment  
 
-- **Wazuh** for threat detection (SIEM)
-- **Shuffle** for automating security workflows (SOAR)
-- **TheHive** for case management
-- **Cortex** for threat intelligence enrichment
-
-All components run in Docker containers for easy setup.
-
-## How Does It Work?
-
-1. **Wazuh** detects suspicious activity on endpoints.
-2. **Shuffle** receives alerts and automates responses:
-    - Creates cases in **TheHive**
-    - Enriches data with **Cortex** (optional)
-3. You can follow the flow from detection to investigation and response.
-
-## Quick Start
-
-- **Requirements:** Docker, Linux, admin access, internet connection.
-- **Setup:** See [`setup/`](setup/) for installation and connection steps.
-
-## Project Structure
-
-- `docs/` — Architecture and screenshots
-- `configs/` — Example config files
-- `scripts/` — Helper and validation scripts
-- `setup/` — Step-by-step setup instructions
-
-## Lab Hardware
-
-Main SOC server: Old laptop
-- CPU: 12 x Intel Core i7-8750H @ 2.20GHz
-- RAM: 12GB DDR4
-- Storage: 1TB HDD
-- Hypervisor: Proxmox 9.0.3
-- VM: Ubuntu 22.04.5 (runs Wazuh and Shuffle containers)
-
-Windows desktop:
-- VMware Workstation 17 Pro
-- VMs: TheHive/Cortex, Linux agent, Windows agent
-
-## Learn More
-
-For detailed guides and walkthroughs, check the files in the `setup/` and `docs/` folders.
+All components are deployed using **Docker**.
 
 ---
 
-*This README gives a high-level overview. For step-by-step instructions, see the other markdown files in this repo.*
+## Workflow
+
+1. **Wazuh** detects suspicious activity  
+2. Alerts are sent to **Shuffle**  
+3. **Shuffle** automates:
+   - Case creation in **TheHive**  
+   - Data enrichment via **Cortex**  
+4. Full flow: **Detection → Investigation → Response**
+
+---
+
+## Key Features
+
+- End-to-end SOAR pipeline  
+- Automated alert triage and case management  
+- Threat intelligence enrichment  
+- Modular Docker-based setup  
+
+---
+
+## Setup
+
+See [`setup/`](setup/) for installation steps.
+
+---
+
+## Project Structure
+
+- `docs/` — Architecture and screenshots  
+- `configs/` — Configuration files  
+- `scripts/` — Automation scripts  
+- `setup/` — Deployment guide  
